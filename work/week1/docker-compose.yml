@@ -1,5 +1,5 @@
 services:
-  postgres:
+  de_postgres:
     image: postgres:13
     container_name: de_postgres
     env_file: .env
@@ -9,11 +9,7 @@ services:
       - pg_network
     volumes:
       - pg_data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD", "pg_isready", "-U", "airflow"]
-      interval: 5s
-      retries: 5
-    restart: always
+
 
 volumes:
   pg_data:
@@ -22,3 +18,5 @@ volumes:
 
 networks:
   pg_network:
+    external: true
+    name: airflow_default
