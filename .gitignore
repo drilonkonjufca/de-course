@@ -2,3 +2,4 @@
 **/logs
 **/__pycache__
 de-course-workspace.code-workspace
+*.csv
