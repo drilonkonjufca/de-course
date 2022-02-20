@@ -39,3 +39,13 @@ For this course we will need to use these tools:
 - Ingesting data to GCP with Airflow
 - Ingesting data to local Postgres with Airflow
 - Moving data from AWS to GCP (Transfer service)
+
+
+## Week 3: Data Warehouse
+- Data warehouse (BigQuery) (25 minutes)
+- What is a data warehouse solution
+- Partitoning and clustering, Automatic re-clustering
+- Loading data to big query
+- BigQuery best practices
+- Machine Learning on BQ
+
