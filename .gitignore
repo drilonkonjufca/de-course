@@ -3,3 +3,8 @@
 **/__pycache__
 de-course-workspace.code-workspace
 *.csv
+*.csv.gz
+*.parquet
+*.parquet.crc
+*_SUCCESS
+*_SUCCESS.crc
