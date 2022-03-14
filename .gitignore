@@ -8,3 +8,4 @@ de-course-workspace.code-workspace
 *.parquet.crc
 *_SUCCESS
 *_SUCCESS.crc
+venv
