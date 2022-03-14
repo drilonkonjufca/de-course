@@ -2,15 +2,12 @@ import faust
 
 app = faust.App('stream_joined', broker='kafka://localhost:9092')
 
-topic1 = app.topic('stream1')
-topic2 = app.topic('stream2')
+topic = app.topic('stream1','stream2')
 
-
-@app.agent(topic1)
-async def start_reading(records):
-    async for record in records:
-        print(record)
-
+@app.agent(topic)
+async def process(stream):
+    async for key, value in stream.items():
+        print(key, value)
 
 if __name__ == '__main__':
     app.main()

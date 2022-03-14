@@ -10,7 +10,7 @@ producer  = KafkaProducer(
 )
 
 
-for e in range(10):
+for e in range(20):
     key1 = e
     key2 = e
     data1 = {'number': 2*e}
